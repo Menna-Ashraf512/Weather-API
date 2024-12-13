@@ -1,0 +1,238 @@
+ /* Global styles */
+
+body {
+    color: #FFFFFF; 
+    background-color: #1E202B;
+}
+
+
+
+.w-25{
+    width: 25%;
+}
+
+/* navbar styles */
+.navbar {
+    background-color: #1E202B;
+    padding: 20px 0;
+}
+
+.navbar-brand .logo_type h1 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.navbar-brand .logo_type p {
+    color: #A0A0A0;
+    font-size: 0.9rem;
+}
+
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    width: fit-content;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 5px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #009AD8;
+    outline: 2px solid #009AD8;
+}
+.navbar-toggler{
+    transition: all .5s ease;
+    border-color: transparent;
+    padding: 15px 13px;
+    border-radius: 20px;
+    outline: transparent 2px solid;
+
+}
+.navbar-toggler span i{
+    transition: all .5s ease;
+color: #FFFFFF;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler:hover{
+
+    outline: #009AD8 2px solid;
+    border-radius: 20px;
+}
+.navbar-toggler:hover span i{
+color: #009AD8;
+}
+
+/* ----------input search style------------ */
+.input-container ,
+.input-containerFooter{
+    display: flex;
+    align-items: center;
+    background-color: #1E202B;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 30px;
+}
+.input-container input,
+.input-containerFooter input {
+    border: none;
+    background: none;
+    color: #A0A0A0;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+.input-container button,
+.input-containerFooter button {
+    background-color: #009AD8;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* ----------section search style------------ */
+
+section.search{
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    height: 350px;
+}
+
+
+
+.card-body .num{
+    font-size: 65px;
+    font-weight: 600;
+}
+.card-body{
+    background-color: #323544;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-header{
+    background-color: #2D303D;
+    border: none;
+}
+.card{
+    border: none;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+/* ---------- End section search style------------ */
+
+.text_color{
+    color: #009AD8;
+}
+
+
+
+
+.card-body.dark{
+    background-color: #222530;
+}
+.card-header.dark{
+    background-color: #262936;
+}
+
+
+
+
+.social ul li{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #222530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+}
+.social ul li i{
+    color: #009AD8;
+    transition: all .2s ease;
+    font-size: 20px;
+}
+
+
+.social ul li:hover{
+    background-color: #009AD8;
+}
+.social ul li:hover i{
+    color: #FFFFFF;
+}
+
+footer{
+    background-color: #262936;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for navbar */
+@media screen and (max-width:992px) {
+    .navbar-nav .nav-item {
+        margin:auto;
+        margin-block: 10px;
+    }
+    .navbar-collapse{
+        margin-top: 10px;
+        & ul{
+            width: 100%;
+            background-color: #323544;
+            margin: auto;
+            border-radius: 20px;
+            & li{
+                width: 100%;
+                border-bottom: 2px solid #1E202B;
+            }
+            & li:last-child{
+                border-bottom:none;
+            }
+        }
+    }
+    .navbar-nav .nav-link{
+        transition: all .8s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #009AD8;
+    outline: 2px solid transparent;
+}
+}
+
+@media screen and (min-width:993px) {
+        .input-containerFooter{
+        width: 75%;
+    }
+}
