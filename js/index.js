@@ -48,7 +48,7 @@ function displayWeather(weatherData) {
     let dayName = days[date.getDay()];
 
     let content = `
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 ">
                 <div class="card-header  d-flex justify-content-between">
                     <div class="frDay">${dayName}</div>
@@ -77,7 +77,7 @@ function displayWeather(weatherData) {
         if (index === 1) { 
             let forecastDate = new Date(forecast.date);
             content += `
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100">
                         <div class="card-header dark  d-flex justify-content-center">
                             <div class="secDay">${days[forecastDate.getDay()]}</div>
@@ -97,7 +97,7 @@ function displayWeather(weatherData) {
         }else if(index ===2){
             let forecastDate = new Date(forecast.date);
             content += `
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 ">
                         <div class="card-header d-flex justify-content-center">
                             <div class="secDay">${days[forecastDate.getDay()]}</div>
